@@ -1,6 +1,56 @@
 ## Security
 
-### OWASP Top 10
+### OWASP (Open Web Application Security Project) Top 10 Vulnerabilities
+
+https://owasp.org/www-project-top-ten/
+
+![](images/owasp-top-10.png)
+
+- `Broken Access Control`: Improperly enforced access controls can allow unauthorized users to perform actions or access resources they shouldn't be able to.
+
+  Mitigation:
+
+  - Implement proper role-based access controls and authorization mechanisms.
+  - Regularly review and test access control configurations to ensure they're effective.
+  - Use strong authentication and session management practices.
+
+- `Cryptographic Failures (Sensitive Data Exposure)`: Inadequate protection of sensitive data, such as financial information or personal records, can lead to data breaches.
+
+  Mitigation:
+
+  - Encrypt sensitive data both in transit and at rest.
+  - Follow best practices for secure key management and encryption algorithms.
+  - Avoid storing unnecessary sensitive data and use appropriate access controls.
+
+- `Injection`: This occurs when untrusted data is sent to an interpreter as part of a command or query. This can lead to attackers manipulating the interpreter and gaining unauthorized access.
+
+  Mitigation:
+
+  - Use parameterized queries or prepared statements to prevent SQL injection.
+  - Employ input validation and output encoding to prevent other types of injection attacks.
+  - Use an ORM (Object Relational Mapping) to prevent SQL injection.
+  - Use a web application firewall (WAF) to prevent SQL injection.
+
+- `Insecure Design`: New category for 2021, with a focus on risks related to design flaws.
+
+  Mitigation:
+
+  - Establish and use a secure development lifecycle with AppSec professionals to help evaluate and design security and privacy-related controls
+  - Limit resource consumption by user or service
+  - Write unit and integration tests to validate that all critical flows are resistant to the threat model. Compile use-cases and misuse-cases for each tier of your application.
+  - Use threat modeling for critical authentication, access control, business logic, and key flows
+
+- `Security Misconfiguration` : The former category for A4:2017-XML External Entities (XXE) is now part of this risk category.
+
+  - Missing appropriate security hardening across any part of the application stack or improperly configured permissions on cloud services.
+  - Unnecessary features are enabled or installed (e.g., unnecessary ports, services, pages, accounts, or privileges).
+  - Default accounts and their passwords are still enabled and unchanged.
+  - Error handling reveals stack traces or other overly informative error messages to users.
+
+    Mitigation:
+
+    - Use a secure configuration framework to ensure all security controls are implemented and tested.
+    - Regularly review and update security configurations.
 
 ### API Security Best Practices
 
