@@ -72,3 +72,19 @@ https://owasp.org/www-project-top-ten/
 16. Data Redaction - Obscures sensitive data for protection.
 
 ![](images/api-security.gif)
+
+## Content-Security-Policy (CSP) Headers
+
+https://content-security-policy.com/
+
+- `Content-Security-Policy` - The HTTP Content-Security-Policy response header allows web site administrators to control resources the user agent is allowed to load for a given page. With a few exceptions, policies mostly involve specifying server origins and script endpoints. This helps guard against cross-site scripting attacks (XSS).
+
+`Scan your site for CSP headers`
+
+- https://observatory.mozilla.org/
+- https://securityheaders.com/
+- https://csp-evaluator.withgoogle.com/
+
+Adding HTTP Security Headers Using Lambda@Edge and Amazon CloudFront
+
+https://aws.amazon.com/blogs/networking-and-content-delivery/adding-http-security-headers-using-lambdaedge-and-amazon-cloudfront/
